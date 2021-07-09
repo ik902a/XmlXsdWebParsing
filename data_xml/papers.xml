@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<papers 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns="http://www.example.com/papers"
+			xsi:schemaLocation="http://www.example.com/papers papers.xsd">
+	
+	<newspaper id="p001" theme="news">
+		<title>Советская Белоруссия</title>
+		<date>2021-01-30</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>30</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>00001</subscript-index>
+	</newspaper>
+	
+	<magazine id="p555">
+		<title>Time</title>
+		<date>2021-01-29</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>100</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>555055</subscript-index>
+	</magazine>
+	
+	<booklet id="p666" theme="nature">
+		<title>Stop pollution</title>
+		<date>2021-01-15</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>2</number-pages>
+		<is-glossy>true</is-glossy>
+	</booklet>
+	
+	<newspaper id="p069" theme="news">
+		<title>Die Zeit</title>
+		<date>2021-01-30</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>26</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>69001</subscript-index>
+	</newspaper>
+	
+	<magazine id="p557" theme="people">
+		<title>Forbes</title>
+		<date>2021-01-25</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>150</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>777077</subscript-index>
+	</magazine>
+	
+	<magazine id="p042" theme="computerGames">
+		<title>Игромания</title>
+		<date>2021-01-15</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>350</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>7770042</subscript-index>
+	</magazine>
+	
+	<magazine id="p111" theme="science">
+		<title>Техника молодежи</title>
+		<date>2021-01-23</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>170</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>71112</subscript-index>
+	</magazine>
+	
+	<newspaper id="p123" theme="sport">
+		<title>Спорт Экспресс</title>
+		<date>2021-01-30</date>
+		<is-monthly>false</is-monthly>
+		<is-color>false</is-color>
+		<number-pages>16</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>123456</subscript-index>
+	</newspaper>
+	
+	<newspaper id="p224" theme="news">
+		<title>Правда</title>
+		<date>2021-01-10</date>
+		<is-monthly>true</is-monthly>
+		<is-color>false</is-color>
+		<number-pages>20</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>22405</subscript-index>
+	</newspaper>
+	
+	<booklet id="p669" theme="nature">
+		<title>Facts about AIDS</title>
+		<date>2021-01-30</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>10</number-pages>
+		<is-glossy>true</is-glossy>
+	</booklet>
+	
+	<magazine id="p424" theme="cars">
+		<title>Top Gear</title>
+		<date>2021-01-13</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>250</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>8234573</subscript-index>
+	</magazine>
+	
+	<magazine id="p888" theme="nature">
+		<title>nature</title>
+		<date>2021-01-17</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>120</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>78882</subscript-index>
+	</magazine>
+	
+	<magazine id="p991" theme="people">
+		<title>GQ</title>
+		<date>2021-01-21</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>120</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>797979</subscript-index>
+	</magazine>
+	
+	<newspaper id="p646">
+		<title>The New York times</title>
+		<date>2021-01-30</date>
+		<is-monthly>true</is-monthly>
+		<is-color>false</is-color>
+		<number-pages>30</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>1646555</subscript-index>
+	</newspaper>
+	
+	<magazine id="p332" theme="people">
+		<title>Maxim</title>
+		<date>2021-01-30</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>330</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>323232</subscript-index>
+	</magazine>
+	
+	<magazine id="p011" theme="computerGames">
+		<title>Famitsu</title>
+		<date>2021-01-29</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>320</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>011001</subscript-index>
+	</magazine>
+	
+	<newspaper id="p283" theme="news">
+		<title>The guardian</title>
+		<date>2021-01-27</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>30</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>352550</subscript-index>
+	</newspaper>
+	
+</papers>

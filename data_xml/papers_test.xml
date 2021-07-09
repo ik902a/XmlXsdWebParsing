@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<papers 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns="http://www.example.com/papers"
+			xsi:schemaLocation="http://www.example.com/papers papers.xsd">
+	
+	<newspaper id="p001" theme="news">
+		<title>Советская Белоруссия</title>
+		<date>2021-01-30</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>30</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>00001</subscript-index>
+	</newspaper>
+	
+	<magazine id="p555">
+		<title>Time</title>
+		<date>2021-01-29</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>100</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>555055</subscript-index>
+	</magazine>
+	
+	<booklet id="p666" theme="nature">
+		<title>Stop pollution</title>
+		<date>2021-01-15</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>2</number-pages>
+		<is-glossy>true</is-glossy>
+	</booklet>
+	
+	<newspaper id="p069" theme="news">
+		<title>Die Zeit</title>
+		<date>2021-01-30</date>
+		<is-monthly>true</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>26</number-pages>
+		<is-glossy>false</is-glossy>
+		<subscript-index>69001</subscript-index>
+	</newspaper>
+	
+	<magazine id="p557" theme="people">
+		<title>Forbes</title>
+		<date>2021-01-25</date>
+		<is-monthly>false</is-monthly>
+		<is-color>true</is-color>
+		<number-pages>150</number-pages>
+		<is-glossy>true</is-glossy>
+		<subscript-index>777077</subscript-index>
+	</magazine>
+</papers>

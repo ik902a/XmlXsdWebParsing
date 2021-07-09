@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.com/papers"
+	xmlns:tns="http://www.example.com/papers"
+	elementFormDefault="qualified">
+
+	<element name="papers">
+		<complexType>
+			<sequence>
+				<element ref="tns:paper" minOccurs="16" maxOccurs="50" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="Paper">
+		<sequence>
+			<element name="title" type="string" />
+			<element name="date" type="date" />
+			<element name="is-monthly" type="boolean" />
+			<element name="is-color" type="boolean" />
+			<element name="number-pages" type="tns:NumberPages" />
+		</sequence>
+		<attribute name="id" type="tns:Id" use="required" />
+		<attribute name="theme" use="optional" default="news">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="life"></enumeration>
+					<enumeration value="people"></enumeration>
+					<enumeration value="computerGames"></enumeration>
+					<enumeration value="nature"></enumeration>
+					<enumeration value="sport"></enumeration>
+					<enumeration value="cars"></enumeration>
+					<enumeration value="science"></enumeration>
+					<enumeration value="news"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+
+	<simpleType name="Id">
+		<restriction base="ID">
+			<pattern value="p\d{3}" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="Newspaper">
+		<complexContent>
+			<extension base="tns:Paper">
+				<sequence>
+					<element name="is-glossy" type="boolean" fixed="false"/>
+					<element name="subscript-index" type="tns:SubscriptIndex" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="Magazine">
+		<complexContent>
+			<extension base="tns:Paper">
+				<sequence>
+					<element name="is-glossy" type="boolean" fixed="true"/>
+					<element name="subscript-index" type="tns:SubscriptIndex" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="Booklet">
+		<complexContent>
+			<extension base="tns:Paper">
+				<sequence>
+					<element name="is-glossy" type="boolean" fixed="true"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<simpleType name="NumberPages">
+		<restriction base="positiveInteger">
+			<minInclusive value="2" />
+			<maxInclusive value="1000" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="SubscriptIndex">
+		<restriction base="string">
+			<pattern value="\d{5,7}" />
+		</restriction>
+	</simpleType>
+
+	<element name="paper" type="tns:Paper" abstract="true" />
+	<element name="newspaper" type="tns:Newspaper" substitutionGroup="tns:paper" />
+	<element name="magazine" type="tns:Magazine" substitutionGroup="tns:paper" />
+	<element name="booklet" type="tns:Booklet" substitutionGroup="tns:paper" />
+</schema>
